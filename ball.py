@@ -9,7 +9,7 @@ GRAVITY = 9.8
 class Ball:
     image = None
 
-    def __init__(self, x = 400, y = 300, thrown_speed = 15, thrown_angle = 45):
+    def __init__(self, x = 400, y = 300, thrown_speed = 15, thrown_angle = 80):
         if Ball.image == None:
             Ball.image = load_image('ball21x21.png')
         self.x, self.y = x, y
@@ -28,4 +28,4 @@ class Ball:
             game_world.remove_object(self)
 
         if self.y < 60:
-            game_world.remove_object(self)  
+            game_world.remove_object(self)
