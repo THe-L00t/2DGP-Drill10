@@ -21,7 +21,7 @@ class Bird:
     def __init__(self):
         if Bird.image == None:
             Bird.image = load_image('bird_animation.png')
-        self.x = 1600
+        self.x = random.randint(750,850)
         self.y = random.randint(400, 550)
         self.frame = 0
         self.frame_offset_x = 0
