@@ -28,4 +28,4 @@ class Ball:
             game_world.remove_object(self)
 
         if self.y < 60:
-            game_world.remove_object(self)
+            game_world.remove_object(self)  
